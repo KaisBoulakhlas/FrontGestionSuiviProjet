@@ -1,0 +1,28 @@
+<div class="row animated fadeIn">
+    <div class="col s1"></div>
+    <div class="col s8">
+        <h3 id="title" style="margin-left: 10%;">Ajouter un projet</h3>
+        <hr style="position: relative;left: 10%;opacity:0.3">
+    </div>
+</div>
+
+<div class="row container animated fadeIn">
+    <div class="col s1"></div>
+    <form class="col s6 collapsible responsive" >
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="nom" type="text" class="validate">
+                <label for="nom">Nom</label>
+                <div class="input-field col s12">
+                    <select id="select-users">
+                        <option value="" disabled selected>Choisir un utilisateur</option>
+                    </select>
+                    <label>Utilisateurs</label>
+                </div>
+            </div>
+        </div>
+        <a class="waves-effect waves-light btn"  onclick="newProjetController.saveProjet()" style="margin-bottom: 10px;">Ajouter<i class="material-icons right">check</i></a>
+    </form>
+</div>
+
+
